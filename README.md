@@ -77,5 +77,4 @@ cd summative/FlutterApp
 flutter pub get
 flutter run
 ```
-Update `baseUrl` in `lib/main.dart` with your deployed API URL first.
-See `summative/FlutterApp/README.md` for details.
+
