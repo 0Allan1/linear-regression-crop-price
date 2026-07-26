@@ -23,6 +23,16 @@ While this command is actively running, `http://127.0.0.1:8000/docs` will
 work in your own browser. It is NOT a public URL — if you're not currently
 running this command yourself, that link will fail to connect. Use the
 deployed URL above instead.
+
+## Deploy on Render (for reference / redeploying)
+
+1. Push this repo to GitHub.
+2. On Render: **New +** → **Web Service** → connect the repo.
+3. **Root Directory:** `summative/API`
+4. **Build Command:** `pip install -r requirements.txt`
+5. **Start Command:** `uvicorn prediction:app --host 0.0.0.0 --port $PORT`
+6. Deploy. Render auto-redeploys on every push to `main`.
+
 ## Endpoints
 
 - `GET /` — health check
