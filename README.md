@@ -56,15 +56,19 @@ Google Colab. If using Colab, upload `wfp_food_prices_rwa.csv` to the
 Colab session's file storage first (same folder as the notebook expects
 it), then Runtime → Run all.
 
-## Running the API Locally
+## Running the API Locally (optional — the API is already deployed live, see above)
 
 ```bash
 cd summative/API
 pip install -r requirements.txt
 uvicorn prediction:app --reload
 ```
-Visit `http://127.0.0.1:8000/docs` for Swagger UI. See `summative/API/README.md`
-for Render deployment steps.
+This starts a server on your own machine only. While `uvicorn` is running,
+`http://127.0.0.1:8000/docs` will work in **your** browser. It is NOT a
+public link — it only works while you're actively running the command above
+on your own computer. For the public, always-available Swagger UI, use the
+Live API link above instead. See `summative/API/README.md` for Render
+deployment steps.
 
 ## Running the Mobile App
 
