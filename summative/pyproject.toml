@@ -1,0 +1,22 @@
+[project]
+name = "crop-price-forecasting"
+version = "0.1.0"
+description = "Crop price forecasting for Rwanda — linear regression summative project"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "scikit-learn>=1.3",
+    "matplotlib>=3.7",
+    "seaborn>=0.12",
+    "joblib>=1.3",
+    "jupyter>=1.0",
+    "fastapi>=0.110",
+    "pydantic>=2.0",
+    "uvicorn[standard]>=0.29",
+]
+
+[dependency-groups]
+dev = [
+    "nbconvert>=7.0",
+]
