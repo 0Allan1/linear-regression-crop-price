@@ -46,7 +46,7 @@ linear_regression_model/
 - **GitHub repo:** `https://github.com/0Allan1/linear-regression-crop-price`
 
 ## Video Demo
-
+link: https://youtu.be/VvS5ZuZ54cg
 
 
 ## Running the Notebook
