@@ -3,7 +3,15 @@
 FastAPI service that predicts crop/food prices (RWF) in Rwanda, using the
 Decision Tree model trained in `../linear_regression/multivariate.ipynb`.
 
-## Run locally
+## Already deployed (use this)
+
+This API is live at **https://linear-regression-crop-price.onrender.com** —
+Swagger UI: **https://linear-regression-crop-price.onrender.com/docs**
+
+(Free-tier Render instances sleep after inactivity; the first request after
+idling can take 30-60 seconds to wake up — this is normal.)
+
+## Run locally (optional, for development only)
 
 ```bash
 cd summative/API
@@ -11,18 +19,10 @@ pip install -r requirements.txt
 uvicorn prediction:app --reload
 ```
 
-Then open http://127.0.0.1:8000/docs for the Swagger UI.
-
-## Deploy on Render
-
-1. Push this repo to GitHub.
-2. On Render: **New +** → **Web Service** → connect the repo.
-3. **Root Directory:** `summative/API`
-4. **Build Command:** `pip install -r requirements.txt`
-5. **Start Command:** `uvicorn prediction:app --host 0.0.0.0 --port $PORT`
-6. Deploy. Your Swagger UI will be publicly available at:
-   `https://<your-service-name>.onrender.com/docs`
-
+While this command is actively running, `http://127.0.0.1:8000/docs` will
+work in your own browser. It is NOT a public URL — if you're not currently
+running this command yourself, that link will fail to connect. Use the
+deployed URL above instead.
 ## Endpoints
 
 - `GET /` — health check
