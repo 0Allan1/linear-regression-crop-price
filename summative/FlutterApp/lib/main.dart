@@ -53,12 +53,8 @@ class PredictionPage extends StatefulWidget {
 }
 
 class _PredictionPageState extends State<PredictionPage> {
-  // --------------------------------------------------------------
-  // IMPORTANT: update this to your deployed Render URL, e.g.
-  // 'https://rwanda-crop-price-api.onrender.com'
-  // Keep it with NO trailing slash.
-  // --------------------------------------------------------------
-  static const String baseUrl = 'https://YOUR-RENDER-APP-NAME.onrender.com';
+  
+  static const String baseUrl = 'https://linear-regression-crop-price.onrender.com';
 
   final _admin1Controller = TextEditingController(text: 'Kigali City');
   final _commodityController = TextEditingController(text: 'Maize');

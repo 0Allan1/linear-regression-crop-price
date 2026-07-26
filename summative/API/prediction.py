@@ -142,7 +142,7 @@ ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1",
     "http://127.0.0.1:5500",
-    "https://rwanda-crop-price-api.onrender.com",  # update to your actual Render URL after deployment
+    "https://linear-regression-crop-price.onrender.com",
 ]
 
 app.add_middleware(

@@ -41,8 +41,8 @@ linear_regression_model/
 
 ## Live API
 
-- **Public API base URL:** `<TODO: paste your Render URL here after deployment>`
-- **Swagger UI docs:** `<TODO: e.g. https://your-app.onrender.com/docs>`
+- **Public API base URL:** `https://linear-regression-crop-price.onrender.com`
+- **Swagger UI docs:** `https://linear-regression-crop-price.onrender.com/docs`
 
 ## Video Demo
 
