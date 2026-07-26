@@ -4,14 +4,15 @@ A single-page Flutter app that calls the `/predict` endpoint of the FastAPI
 service in `../API/` and shows the predicted crop price, or a clear error
 message if inputs are invalid or missing.
 
-## Before running
+## Backend
 
-Open `lib/main.dart` and update this line with your deployed Render URL
-(no trailing slash):
+Already pointed at the live deployed API — `lib/main.dart` has:
 
 ```dart
-static const String baseUrl = 'https://YOUR-RENDER-APP-NAME.onrender.com';
+static const String baseUrl = 'https://linear-regression-crop-price.onrender.com';
 ```
+
+No change needed unless you redeploy the API elsewhere.
 
 ## Run instructions
 
@@ -38,10 +39,8 @@ static const String baseUrl = 'https://YOUR-RENDER-APP-NAME.onrender.com';
   - a clear error message (missing fields, invalid types, out-of-range
     values, or a network/connection problem).
 
-## Note
+## Confirmed working
 
-This code was written and syntax-checked (balanced braces/parens) but
-**could not be compiled or run** in the environment it was generated in
-(no Flutter SDK available there). Please run `flutter analyze` and
-`flutter run` yourself before recording your demo video, and let me know
-if you hit any errors — I can fix them from the error message.
+This app was built, deployed to a physical Android device (via VS Code +
+USB debugging), and tested against the live Render API — `/predict`
+returns real results.
