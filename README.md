@@ -43,6 +43,7 @@ linear_regression_model/
 
 - **Public API base URL:** `https://linear-regression-crop-price.onrender.com`
 - **Swagger UI docs:** `https://linear-regression-crop-price.onrender.com/docs`
+- **GitHub repo:** `https://github.com/0Allan1/linear-regression-crop-price`
 
 ## Video Demo
 
