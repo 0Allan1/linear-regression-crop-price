@@ -47,7 +47,7 @@ linear_regression_model/
 
 ## Video Demo
 
-- **YouTube link:** `<TODO: paste your ≤7-minute demo video link here>`
+
 
 ## Running the Notebook
 
